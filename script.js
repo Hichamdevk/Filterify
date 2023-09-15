@@ -24,7 +24,8 @@ window.onload = function() {
 }
 
 function resetValue() {
-    img.style.filter = 'none'
+        ctx.drawImage(img,0,0,canvas.width,canvas.height)
+    ctx.filter = 'none'
     saturate.value = '100';
     contrast.value = '100';
     brightness.value = '100' ;
